@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/a07605399.js"></script>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/font-
+awesomefree@5.15.3/css/fontawesome.min.css"rel="stylesheet">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<style>
+
+.mySlides {display:none;}
+body {
+margin:0;
+font-family: Arial, Helvetica, sans-serif;}
+
+.topnav {
+  width: 100%;
+height:25%;
+  background-color: #555;
+  overflow: visible;
+}
+
+.topnav a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #000;
+}
+.topnav-right {
+  float: right;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+img{
+object-fit:cover;
+float:left;
+ margin: 20px 10px 60px 30px;     
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: right;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+.services
+{
+margin:90px auto;
+text-align:center;
+}
+h1
+{
+font-family:sans- serif;
+letter-spacing:1px;
+
+}
+h1:after
+{
+content:' ';
+background:blue;
+display:block;
+width:150px;
+height:3px;
+margin: 10px auto;
+}
+.icon
+{
+font-size:40px;
+margin:20px auto;
+padding:20px;
+height:100px;
+width:100px;
+border:1px solid white;
+border-radius:50%;
+}
+.container
+{
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(medical.PNG);
+background-size:cover;
+background-position:center;
+
+height:500px;
+}
+
+.col -md-3:hover
+{
+box-shadow:5px 7px 9px  -9px red;
+background-color:red;
+cursor:pointer;
+background:blue;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+.team-section{
+	background-color:#007eef;
+	min-height: 100vh;
+	padding:70px 15px 30px;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team-section .section-title{
+	flex-basis: 100%;
+	max-width: 100%;
+	margin-bottom: 70px;
+}
+
+.team-section .section-title h1{
+	font-size: 40px;
+	text-align: center;
+	margin:0;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.team-section .section-title p{
+	font-size:16px;
+	text-align: center;
+	margin:15px 0 0;
+	color:#ffffff;
+}
+.team-section .team-items{
+	
+	flex-basis: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.team-section .team-items .item{
+ flex-basis: calc(25% - 30px);
+ max-width: calc(25% - 30px);
+ transition: all .5s ease;
+ margin-bottom: 40px;
+}
+.team-section .team-items .item img{
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.team-section .team-items .item .inner{
+	position: relative;
+	z-index: 11;
+	padding:0 15px;
+}
+.team-section .team-items .item .inner .info{
+	background-color:#002f96;
+	text-align: center;
+	padding: 20px 15px;
+	border-radius:8px;
+	transition: all .5s ease;
+	margin-top: -40px;
+}
+.team-section .team-items .item:hover  .info{
+    transform: translateY(-20px);
+}
+.team-section .team-items .item:hover{
+ transform: translateY(-10px);	
+}
+.team-section .team-items .item .inner .info h5{
+	margin:0;
+	font-size: 18px;
+	font-weight: 600;
+	color:#ffffff;
+}
+.team-section .team-items .item .inner .info p{
+	font-size: 16px;
+	font-weight: 400;
+	color:#c5c5c5;
+	margin:10px 0 0;
+}
+
+.team-section .team-items .item .inner .info .social-links{
+	padding-top: 15px;
+}
+
+.team-section .team-items .item .inner .info .social-links a{
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	background-color: #ffffff;
+	color:#007eef;
+	border-radius: 50%;
+	margin:0 2px;
+	text-align: center;
+	line-height: 32px;
+	font-size:16px;
+	transition: all .5s ease;
+}
+
+.team-section .team-items .item .inner .info .social-links a:hover{
+	box-shadow: 0 0 10px #000;
+}
+
+
+/* Responsiveness */
+@media(max-width: 991px){
+	.team-section .team-items .item{
+		flex-basis: calc(50% - 30px);
+		max-width: calc(50% - 30px);
+	}
+}
+@media(max-width: 767px){
+	.team-section .team-items .item{
+		flex-basis: calc(100%);
+		max-width: calc(100%);
+	}
+}
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  position:fixed;
+  bottom: 0px;
+left:0px;
+  width: 200%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.logo
+{
+align:left:
+}
+</style>
+</head>
+
+<body>
+
+<div class="topnav">
+
+<a href="#default" class="logo"><img src="C:\Users\Win10\Desktop\project\visudh.PNG"</a>
+  
+  <div class="topnav-right">
+   
+   <a href="file:///C:/Users/Win10/Desktop/project/about.html"><i class="fa fa-slideshare"></i> About</a> 
+   
+  <a href="#"><i class=" fa fa-h-square"></i> Hospitality</a> 
+<a href="#"><i class="fa fa-heart"></i> Diagonosis</a> 
+
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div></div>
+
+
+
+<div class="w3-content w3-section" style="max-width:900px">
+  <img class="mySlides" src="C:\Users\Win10\Desktop\project\Capture.PNG" style="width:100%">
+  <img class="mySlides" src="C:\Users\Win10\Desktop\project\Captures.PNG" style="width:100%">
+  <img class="mySlides" src="C:\Users\Win10\Desktop\project\Capturess.PNG" style="width:100%">
+</div>
+<div class="w3-container w3-card w3-indigo">
+  <h1>About Us</h1>
+</div>
+<main>
+    <section>
+
+      <img src="C:\Users\Win10\Desktop\project\middle.PNG"  width="600" height="300" >
+
+
+
+<br>
+
+
+<h3 style="color:black;">VISUDH AJIVAM PVT LTD </h3><h6 style="color:blue;">is one of the best digital platform for health care services integrated with pharmacies, doctors, labtests, diagnosis centres across India to provide world class Healthcare facilities to individuals across the country.This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.We make sure that the quality of service you are getting is world class we give you this gurranty with every service you opt for online as well as offline.We are one stop solution for your problems.We are covering a wide range of products, test and doctors with speciality in different feilds to make the service wide and safest.
+VISUDH AJIVAM PVT LTD is one of the best digital platform for health care services integrated with pharmacies, doctors, labtests, diagnosis centres across India to provide world class Healthcare facilities to individuals across the country.This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.We make sure that the quality of service you are getting is world class we give you this gurranty with every service you opt for online as well as offline.We are one stop solution for your problems.We are covering a wide range of products, test and doctors with speciality in different feilds to make the service wide and safest.</h6>
+</div>
+<br>
+
+
+</section>
+
+
+  </main>
+<div class ="container">
+<div class ="services">
+<h1>What We Do</h1>
+</div>
+<div class="row">
+<div class="col-md-3 text-center">
+
+<div class ="icon">
+
+<i class="fa fa-calendar" aria-hidden="true"></i>
+</div>
+<h3>take an appointment</h3>
+<p>This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.</p>
+</div>
+
+<div class="col-md-3 text-center">
+
+<div class ="icon">
+<i class="fa fa-heartbeat"></i>
+
+</div>
+<h3>book lab test</h3>
+<p>This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.</p>
+</div>
+
+
+
+<div class="col-md-3 text-center">
+
+<div class ="icon">
+<i class="fa fa-medkit"></i>
+</div>
+<h3>medicines</h3>
+<p>This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.</p>
+</div>
+
+
+
+
+<div class="col-md-3 text-center">
+
+<div class ="icon">
+<i class="fa fa-user-md"></i>
+</div>
+<h3>customer support</h3>
+<p>This platform is the fastest, cheapest, safestway for you and your loved ones for meeting your medical needs in terms of medicine, labtest and doctors availability at the right time at the best affordable price.</p>
+</div>
+
+
+
+<section>
+   <center>
+<br>
+<br>
+      <h2 style="color:blue;"><u>Our Team</u></h2>
+            <table>
+                  <tr>
+                        <th>
+                              <img src="C:\Users\Win10\Desktop\project\girl.PNG">   </th>
+<th>
+                              <img src="C:\Users\Win10\Desktop\project\boy.PNG">   </th>
+<th>
+                              <img src="C:\Users\Win10\Desktop\project\man.PNG">   </th>
+
+<th>
+                              <img src="C:\Users\Win10\Desktop\project\lady.PNG">   </th>
+</tr>
+
+<tr>
+                                     <td>  <center>
+                                                <h5 style="color:black;">Jane Doe</h5>
+                                                <p style="color:black;">Designer</p></center></td>
+
+                            <td>  <center>
+                                                <h5 style="color:black;">Jane Doe</h5>
+                                                <p style="color:black;">Designer</p></center></td>
+                             <td>  <center>
+                                                <h5 style="color:black;">Jane Doe</h5>
+                                                <p style="color:black;">Designer</p></center></td>
+                          
+                               <td>  <center>
+                                                <h5 style="color:black;">Jane Doe</h5>
+                                                <p style="color:black;">Designer</p></center></td>
+                             
+</tr>
+                      
+
+
+
+</table>
+</section>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+
+
+}
+</script>
+<footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>CodinNepal is a YouTube channel where you can learn web designing, web development, ui/ux designing, html css tutorial, hover animation and effects, javascript and jquery tutorial and related so on.</p>
+            <div class="social">
+              <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+              <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Birendranagar, Surkhet</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+089-765432100</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">abc@example.com</span>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <!-- <changeit rows="2" cols="25" required></changeit> -->
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <left>
+          <span class="credit">Created By <a href="https://www.codingnepalweb.com">COPYRIGHT 2020 &#169</a> | </span>
+          <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+        </left>
+      </div>
+    </footer>
+</body>
+</html>
